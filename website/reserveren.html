@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verassend Barcelona - Reserveren</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+    <header>
+        <h1>Verassend Barcelona</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="reserveren.html">Reserveren</a></li>
+                <li><a href="prijzen.html">Prijzen</a></li>
+                <li><a href="informatie.html">Informatie</a></li>
+                <li><a href="about.html">Over Ons</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="reserveren">
+            <h2>Reserveren</h2>
+            <form id="reserveren-form">
+                <label for="type">Reserveringstype:</label>
+                <select id="type" name="type">
+                    <option value="bike">Fiets Verhuur</option>
+                    <option value="tour">Fiets Tour</option>
+                </select>
+                <div id="bike-options">
+                    <label for="num_bikes">Aantal Fietsen:</label>
+                    <input type="number" id="num_bikes" name="num_bikes" min="1" max="20">
+                    <label for="duration">Duur (in uren):</label>
+                    <input type="number" id="duration" name="duration" min="1" max="4">
+                </div>
+                <div id="tour-options">
+                    <label for="time">Tijd:</label>
+                    <select id="time" name="time">
+                        <option value="10:00">10:00</option>
+                        <option value="15:00">15:00</option>
+                    </select>
+                    <label for="num_people">Aantal Personen:</label>
+                    <input type="number" id="num_people" name="num_people" min="1" max="10">
+                </div>
+                <button type="submit">Reserveer</button>
+            </form>
+            <p id="confirmation"></p>
+        </section>
+    </main>
+    <script src="SCRIPTS.js"></script>
+</body>
+</html>
