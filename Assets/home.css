@@ -1,0 +1,136 @@
+/* Reset standaardmarges en -vullingen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stijl voor de navigatiebalk (navbar) */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #fcb900;
+    overflow: hidden;
+}
+
+.navbar img {
+    margin-right: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: orange;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Algemene stijl voor de pagina */
+body {
+    background-image: url(achtergrond.jpg);
+}
+
+/* Stijl voor de kop (header) */
+header {
+    background-color: #fcb900;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Stijl voor de hoofdcontainer */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Stijl voor de rijen (rows) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Stijl voor de kolommen (columns) */
+.column {
+    flex: 0 0 calc(33.333% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+/* Stijl voor afbeeldingen in kolommen */
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Stijl voor de bedrijfsinformatie */
+.company-info {
+    background-color: #fcb900;
+    padding: 20px;
+    border: 1px solid #fcb900;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+.company-info h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
