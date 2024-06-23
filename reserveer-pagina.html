@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reserveringen</title>
+    <link rel="stylesheet" href="Assets/css/reserveer.css">
+</head>
+<body>
+
+<div class="navbar">
+    <img src="Assets/images/logo.png" alt="logo">
+    <a href="home-pagina.html">Home</a>
+    <a href="reserveer-pagina.html">Reserveren</a>
+    <a href="contact-pagina.html">Contact</a>
+    <a href="informatie-pagina.html">Informatie</a>
+</div>
+
+<body>
+    <header>
+        <h1>Fiets Reservering</h1>
+    </header>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="naam">Uw Naam</label>
+                <input type="text" id="naam" name="naam" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Uw E-mailadres</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefoon">Uw Telefoonnummer</label>
+                <input type="text" id="telefoon" name="telefoon" required>
+            </div>
+            <div class="form-group">
+                <label for="datum">Reserveringsdatum</label>
+                <input type="date" id="datum" name="datum" required>
+            </div>
+            <label for="auto's">Kies een fiets:</label>
+            <select name="auto's" id="auto's">
+                <option value="Fatbike">Fatbike AGM GT250</option>
+                <option value="elektrischebike">Lankeleisi MG600 Plus</option>
+                <option value="gazelle2">Gazelle Classic T7</option>
+                <option value="eclipse">Gazelle Eclipse C380 HMB</option>
+                <option value="Batavus">Batavus Ouverture D48</option>
+                <option value="mooiefiets">D1 PRO Dirt</option>
+            </select><br><br>
+            <button type="submit">Reserveer Fiets</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
